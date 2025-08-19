@@ -1,1 +1,1 @@
-In this repository i will upload dsa problems,which i solved daily.
+I am Aashi jain here share my dsa problems which i solved.Repository includes all the problems which are on my sheet and also the problem of the day of platforms like Gfg and leetcode.code also contains the problem statements.Hope it will help you to find the solution as well as the problem statement.
