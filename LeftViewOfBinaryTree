@@ -1,0 +1,26 @@
+class Solution {
+    public ArrayList<Integer> leftView(Node root) {
+        // code here
+        ArrayList<Integer> ans = new ArrayList<>();
+        if(root==null)
+         return ans;
+        Queue<Node> qu = new LinkedList<>();
+        qu.add(root);
+        int size =0;
+        while(!qu.isEmpty())
+        {
+            Node first_node = qu.peek();
+            ans.add(first_node.data);
+            size = qu.size();
+            for(int i =0;i<size;i++)
+            {
+                Node node = qu.poll();
+                if(node.left!=null)
+                 qu.add(node.left);
+                if(node.right!=null)
+                 qu.add(node.right);
+            }
+        }
+        return ans;
+    }
+}
